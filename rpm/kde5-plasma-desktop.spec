@@ -58,7 +58,6 @@ BuildRequires:  kde5-libksysguard-devel
 BuildRequires:  kde5-plasma-workspace-devel
 BuildRequires:  kde5-kwin-devel
 BuildRequires:  kf5-kactivities-libs-devel
-BuildRequires:  libcanberra-devel
 BuildRequires:  desktop-file-utils
 
 
