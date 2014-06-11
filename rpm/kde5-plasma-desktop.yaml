@@ -64,6 +64,7 @@ PkgConfigBR:
     - Qt5Script
     - Qt5Declarative
     - Qt5Quick
+    - Qt5Svg
 Requires:
     - kde5-filesystem
     - kde5-plasma-workspace

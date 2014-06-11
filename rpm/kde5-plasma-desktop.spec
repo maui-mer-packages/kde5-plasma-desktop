@@ -31,6 +31,7 @@ BuildRequires:  pkgconfig(Qt5X11Extras)
 BuildRequires:  pkgconfig(Qt5Script)
 BuildRequires:  pkgconfig(Qt5Declarative)
 BuildRequires:  pkgconfig(Qt5Quick)
+BuildRequires:  pkgconfig(Qt5Svg)
 BuildRequires:  kde5-rpm-macros
 BuildRequires:  extra-cmake-modules
 BuildRequires:  qt5-tools
