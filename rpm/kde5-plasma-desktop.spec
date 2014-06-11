@@ -135,6 +135,7 @@ desktop-file-install --delete-original       \
 %{_kde5_datadir}/kcontrol
 %{_kde5_datadir}/kcmkeys
 %{_kde5_datadir}/kcm_componentchooser
+%{_kde5_datadir}/kcm_phonon
 %{_kde5_datadir}/kcmkeyboard
 %{_kde5_datadir}/ksmserver
 %{_kde5_sysconfdir}/dbus-1/system.d/*.conf
