@@ -32,6 +32,7 @@ PkgBR:
     - libxcb-devel
     - xcb-util-devel
     - libxkbcommon-devel
+    - libXrender-devel
     - phonon-qt5-devel
     - kf5-umbrella
     - kf5-plasma-devel

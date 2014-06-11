@@ -43,6 +43,7 @@ BuildRequires:  libxkbfile-devel
 BuildRequires:  libxcb-devel
 BuildRequires:  xcb-util-devel
 BuildRequires:  libxkbcommon-devel
+BuildRequires:  libXrender-devel
 BuildRequires:  phonon-qt5-devel
 BuildRequires:  kf5-umbrella
 BuildRequires:  kf5-plasma-devel
