@@ -25,14 +25,6 @@ PkgBR:
     - kde5-rpm-macros
     - extra-cmake-modules
     - qt5-tools
-    - libusb-devel
-    - fontconfig-devel
-    - libX11-devel
-    - libxkbfile-devel
-    - libxcb-devel
-    - xcb-util-devel
-    - libxkbcommon-devel
-    - libXrender-devel
     - phonon-qt5-devel
     - kf5-umbrella
     - kf5-plasma-devel
@@ -67,6 +59,45 @@ PkgConfigBR:
     - Qt5Quick
     - Qt5Svg
     - Qt5PrintSupport
+    - libusb
+    - fontconfig
+    - x11-xcb
+    - xkbfile
+    - xkbcommon
+    - xrender
+    # libxcb-devel:
+    - xcb
+    - xcb-composite
+    - xcb-damage
+    - xcb-dpms
+    - xcb-dri2
+    - xcb-glx
+    - xcb-randr
+    - xcb-record
+    - xcb-render
+    - xcb-res
+    - xcb-screensaver
+    - xcb-shape
+    - xcb-shm
+    - xcb-sync
+    - xcb-xevie
+    - xcb-xf86dri
+    - xcb-xfixes
+    - xcb-xinerama
+    - xcb-xprint
+    - xcb-xtest
+    - xcb-xv
+    - xcb-xvmc
+    # xcb-util-devel:
+    - xcb-atom
+    - xcb-aux
+    - xcb-event
+    - xcb-icccm
+    - xcb-image
+    - xcb-keysyms
+    - xcb-property
+    - xcb-renderutil
+    - xcb-reply
 Requires:
     - kde5-filesystem
     - kde5-plasma-workspace
