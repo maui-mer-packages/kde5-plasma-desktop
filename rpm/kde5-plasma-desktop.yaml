@@ -108,6 +108,7 @@ RequiresPostUn:
     - /sbin/ldconfig
 
 Files:
+    - "%dir %{_kde5_datadir}/plasma/shells"
     - "%{_kde5_bindir}/kapplymousetheme"
     - "%{_kde5_bindir}/kaccess"
     - "%{_kde5_bindir}/krdb"
@@ -118,6 +119,7 @@ Files:
     - "%{_kde5_libdir}/kconf_update_bin/*"
     - "%{_kde5_plugindir}/*.so"
     - "%{_kde5_datadir}/plasma/*"
+    - "%exclude %{_kde5_datadir}/plasma/shells/*"
     - "%{_kde5_datadir}/kcminput"
     - "%{_kde5_datadir}/color-schemes"
     - "%{_kde5_datadir}/kconf_update/*"
@@ -139,6 +141,14 @@ Files:
     - "%{_datadir}/polkit-1/actions/*.policy"
 
 SubPackages:
+    - Name: shell
+      Group: System/GUI/Other
+      BuildArch: noarch
+      Summary: Plasma desktop shell
+      Description: |
+        Plasma desktop shell.
+      Files:
+          - "%{_kde5_datadir}/plasma/shells/org.kde.plasma.desktop/*"
     - Name: doc
       Group: Documentation
       Summary: Documentation and user manuals for %{name}

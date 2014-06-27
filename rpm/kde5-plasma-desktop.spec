@@ -98,6 +98,16 @@ BuildRequires:  desktop-file-utils
 Plasma 5 desktop
 
 
+%package shell
+Summary:    Plasma desktop shell
+Group:      System/GUI/Other
+BuildArch:  noarch
+Requires:   %{name} = %{version}-%{release}
+
+%description shell
+Plasma desktop shell.
+
+
 %package doc
 Summary:    Documentation and user manuals for %{name}
 Group:      Documentation
@@ -139,6 +149,7 @@ desktop-file-install --delete-original       \
 
 %files
 %defattr(-,root,root,-)
+%dir %{_kde5_datadir}/plasma/shells
 %{_kde5_bindir}/kapplymousetheme
 %{_kde5_bindir}/kaccess
 %{_kde5_bindir}/krdb
@@ -149,6 +160,7 @@ desktop-file-install --delete-original       \
 %{_kde5_libdir}/kconf_update_bin/*
 %{_kde5_plugindir}/*.so
 %{_kde5_datadir}/plasma/*
+%exclude %{_kde5_datadir}/plasma/shells/*
 %{_kde5_datadir}/kcminput
 %{_kde5_datadir}/color-schemes
 %{_kde5_datadir}/kconf_update/*
@@ -170,6 +182,12 @@ desktop-file-install --delete-original       \
 %{_datadir}/polkit-1/actions/*.policy
 # >> files
 # << files
+
+%files shell
+%defattr(-,root,root,-)
+%{_kde5_datadir}/plasma/shells/org.kde.plasma.desktop/*
+# >> files shell
+# << files shell
 
 %files doc
 %defattr(-,root,root,-)
