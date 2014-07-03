@@ -176,7 +176,6 @@ desktop-file-install --delete-original       \
 %{_kde5_sysconfdir}/xdg/*.knsrc
 %{_datadir}/kservices5/*
 %{_datadir}/knotifications5/*.notifyrc
-%{_datadir}/icons/*/*/*/*
 %{_datadir}/applications/*.desktop
 %{_datadir}/dbus-1/*
 %{_datadir}/polkit-1/actions/*.policy
