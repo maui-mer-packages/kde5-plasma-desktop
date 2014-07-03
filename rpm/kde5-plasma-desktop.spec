@@ -9,7 +9,7 @@ Name:       kde5-plasma-desktop
 # << macros
 
 Summary:    Plasma 5 desktop
-Version:    4.97.0
+Version:    4.98.0
 Release:    1
 Group:      System/Base
 License:    GPLv2+
