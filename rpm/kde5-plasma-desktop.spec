@@ -160,18 +160,13 @@ desktop-file-install --delete-original       \
 %{_kde5_datadir}/plasma/*
 %exclude %{_kde5_datadir}/plasma/shells/*
 %{_kde5_datadir}/config.kcfg
-%{_kde5_datadir}/kcminput
+%{_kde5_datadir}/kcm*
 %{_kde5_datadir}/color-schemes
 %{_kde5_datadir}/kconf_update/*
 %{_kde5_datadir}/kthememanager
 %{_kde5_datadir}/kdisplay
 %{_kde5_datadir}/kcontrol
-%{_kde5_datadir}/kcmkeys
-%{_kde5_datadir}/kcm_componentchooser
-%{_kde5_datadir}/kcm_phonon
-%{_kde5_datadir}/kcmkeyboard
 %{_kde5_datadir}/ksmserver
-%{_kde5_datadir}/kcm
 %{_kde5_sysconfdir}/dbus-1/system.d/*.conf
 %{_kde5_sysconfdir}/xdg/*.knsrc
 %{_datadir}/kservices5/*
