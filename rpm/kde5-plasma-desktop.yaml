@@ -95,9 +95,7 @@ PkgConfigBR:
     - xcb-icccm
     - xcb-image
     - xcb-keysyms
-    - xcb-property
     - xcb-renderutil
-    - xcb-reply
 Requires:
     - kde5-filesystem
     - kde5-plasma-workspace
