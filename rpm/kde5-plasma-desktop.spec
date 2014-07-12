@@ -151,8 +151,8 @@ desktop-file-install --delete-original       \
 %{_kde5_bindir}/kapplymousetheme
 %{_kde5_bindir}/kaccess
 %{_kde5_bindir}/krdb
-%{_kde5_libexecdir}/kcmdatetimehelper
-%{_kde5_libexecdir}/knetattach
+%{_kde5_bindir}/knetattach
+%{_kde5_libexecdir}/kauth/*
 %{_kde5_libdir}/qml/org/kde/plasma/private
 %{_kde5_libdir}/libkdeinit5_kaccess.so
 %{_kde5_libdir}/kconf_update_bin/*
