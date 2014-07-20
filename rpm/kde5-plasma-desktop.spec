@@ -158,6 +158,7 @@ desktop-file-install --delete-original       \
 %{_kde5_libdir}/kconf_update_bin/*
 %{_kde5_plugindir}/*.so
 %{_kde5_datadir}/plasma/*
+%{_kde5_datadir}/kdm/*
 %exclude %{_kde5_datadir}/plasma/shells/*
 %{_kde5_datadir}/config.kcfg
 %{_kde5_datadir}/kcm*
