@@ -153,7 +153,7 @@ desktop-file-install --delete-original       \
 %{_kde5_bindir}/krdb
 %{_kde5_bindir}/knetattach
 %{_kde5_libexecdir}/kauth/*
-%{_kde5_libdir}/qml/org/kde/plasma/private
+%{_kf5_qmldir}/org/kde/plasma/private
 %{_kde5_libdir}/libkdeinit5_kaccess.so
 %{_kde5_libdir}/kconf_update_bin/*
 %{_kde5_plugindir}/*.so
