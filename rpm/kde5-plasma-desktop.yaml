@@ -17,6 +17,7 @@ RpmLintIgnore:
     - no-changelogname-tag
     - library-without-ldconfig-postin
     - library-without-ldconfig-postun
+    - files-duplicate
 
 Configure    : none
 Builder      : none
