@@ -1,4 +1,4 @@
-Name         : kde5-plasma-desktop
+Name         : plasma-desktop
 Version      : 5.0.0
 Release      : 1
 Group        : System/Base
@@ -23,26 +23,25 @@ Configure    : none
 Builder      : none
 
 PkgBR:
-    - kde5-rpm-macros
+    - kf5-rpm-macros
     - extra-cmake-modules
     - qt5-tools
     - phonon-qt5-devel
-    - kf5-umbrella
-    - kf5-plasma-devel
-    - kf5-kdoctools-devel
-    - kf5-ki18n-devel
-    - kf5-kcmutils-devel
-    - kf5-knewstuff-devel
-    - kf5-kdelibs4support-devel
-    - kf5-knotifyconfig-devel
-    - kf5-kdesu-devel
-    - kf5-attica-devel
-    - kf5-kwallet-devel
-    - kf5-krunner-devel
-    - kde5-libksysguard-devel
-    - kde5-plasma-workspace-devel
-    - kde5-kwin-devel
-    - kf5-kactivities-libs-devel
+    - plasma-devel
+    - kdoctools-devel
+    - ki18n-devel
+    - kcmutils-devel
+    - knewstuff-devel
+    - kdelibs4support-devel
+    - knotifyconfig-devel
+    - kdesu-devel
+    - attica-devel
+    - kwallet-devel
+    - krunner-devel
+    - libksysguard-devel
+    - plasma-workspace-devel
+    - kwin-devel
+    - kactivities-libs-devel
     # TODO: n/a
     #- libcanberra-devel
 PkgConfigBR:
@@ -98,8 +97,8 @@ PkgConfigBR:
     - xcb-keysyms
     - xcb-renderutil
 Requires:
-    - kde5-filesystem
-    - kde5-plasma-workspace
+    - kf5-filesystem
+    - plasma-workspace
 
 RequiresPost:
     - /sbin/ldconfig
@@ -107,30 +106,30 @@ RequiresPostUn:
     - /sbin/ldconfig
 
 Files:
-    - "%dir %{_kde5_datadir}/plasma/shells"
-    - "%{_kde5_bindir}/kapplymousetheme"
-    - "%{_kde5_bindir}/kaccess"
-    - "%{_kde5_bindir}/krdb"
-    - "%{_kde5_bindir}/knetattach"
-    - "%{_kde5_libexecdir}/kauth/*"
+    - "%dir %{_kf5_sharedir}/plasma/shells"
+    - "%{_kf5_bindir}/kapplymousetheme"
+    - "%{_kf5_bindir}/kaccess"
+    - "%{_kf5_bindir}/krdb"
+    - "%{_kf5_bindir}/knetattach"
+    - "%{_kf5_libdir}/libexec/*"
     - "%{_kf5_qmldir}/org/kde/plasma/private"
-    - "%{_kde5_libdir}/libkdeinit5_kaccess.so"
-    - "%{_kde5_libdir}/kconf_update_bin/*"
-    - "%{_kde5_plugindir}/*.so"
-    - "%{_kde5_datadir}/plasma/*"
-    - "%{_kde5_datadir}/kdm/*"
-    - "%exclude %{_kde5_datadir}/plasma/shells/*"
-    - "%{_kde5_datadir}/config.kcfg"
-    - "%{_kde5_datadir}/kcm*"
-    - "%{_kde5_datadir}/color-schemes"
-    - "%{_kde5_datadir}/kconf_update/*"
-    - "%{_kde5_datadir}/kthememanager"
-    - "%{_kde5_datadir}/kdisplay"
-    - "%{_kde5_datadir}/kcontrol"
-    - "%{_kde5_datadir}/ksmserver"
-    - "%{_kde5_sysconfdir}/dbus-1/system.d/*.conf"
-    - "%{_kde5_sysconfdir}/xdg/*.knsrc"
-    - "%{_datadir}/kservices5/*"
+    - "%{_kf5_libdir}/libkdeinit5_kaccess.so"
+    - "%{_kf5_libdir}/kconf_update_bin/*"
+    - "%{_kf5_plugindir}/*"
+    - "%{_kf5_sharedir}/plasma/*"
+    - "%{_kf5_sharedir}/kdm/*"
+    - "%exclude %{_kf5_sharedir}/plasma/shells/*"
+    - "%{_kf5_sharedir}/config.kcfg"
+    - "%{_kf5_sharedir}/kcm*"
+    - "%{_kf5_sharedir}/color-schemes"
+    - "%{_kf5_sharedir}/kconf_update/*"
+    - "%{_kf5_sharedir}/kthememanager"
+    - "%{_kf5_sharedir}/kdisplay"
+    - "%{_kf5_sharedir}/kcontrol"
+    - "%{_kf5_sharedir}/ksmserver"
+    - "%{_kf5_sysconfdir}/dbus-1/system.d/*.conf"
+    - "%{_kf5_configdir}/*.knsrc"
+    - "%{_kf5_servicesdir}/*"
     - "%{_datadir}/knotifications5/*.notifyrc"
     - "%{_datadir}/applications/*.desktop"
     - "%{_datadir}/dbus-1/*"
@@ -144,11 +143,11 @@ SubPackages:
       Description: |
         Plasma desktop shell.
       Files:
-          - "%{_kde5_datadir}/plasma/shells/org.kde.plasma.desktop/*"
+          - "%{_kf5_sharedir}/plasma/shells/org.kde.plasma.desktop/*"
     - Name: doc
       Group: Documentation
       Summary: Documentation and user manuals for %{name}
       Description: |
         Documentation and user manuals for %{name}
       Files:
-          - "%{_datadir}/doc/HTML/en/*"
+          - "%{_kf5_htmldir}/en/*"
