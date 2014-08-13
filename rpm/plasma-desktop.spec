@@ -147,10 +147,7 @@ desktop-file-install --delete-original       \
 %files
 %defattr(-,root,root,-)
 %dir %{_kf5_sharedir}/plasma/shells
-%{_kf5_bindir}/kapplymousetheme
-%{_kf5_bindir}/kaccess
-%{_kf5_bindir}/krdb
-%{_kf5_bindir}/knetattach
+%{_kf5_bindir}/*
 %{_kf5_libdir}/libexec/*
 %{_kf5_qmldir}/org/kde/plasma/private
 %{_kf5_libdir}/libkdeinit5_kaccess.so
@@ -160,16 +157,11 @@ desktop-file-install --delete-original       \
 %{_kf5_sharedir}/kdm/*
 %exclude %{_kf5_sharedir}/plasma/shells/*
 %{_kf5_sharedir}/config.kcfg
-%{_kf5_sharedir}/kcm*
-%{_kf5_sharedir}/color-schemes
-%{_kf5_sharedir}/kconf_update/*
-%{_kf5_sharedir}/kthememanager
-%{_kf5_sharedir}/kdisplay
-%{_kf5_sharedir}/kcontrol
-%{_kf5_sharedir}/ksmserver
+%{_kf5_sharedir}/*
 %{_kf5_sysconfdir}/dbus-1/system.d/*.conf
 %{_kf5_configdir}/*.knsrc
 %{_kf5_servicesdir}/*
+%{_kf5_servicetypesdir}/*
 %{_datadir}/knotifications5/*.notifyrc
 %{_datadir}/applications/*.desktop
 %{_datadir}/dbus-1/*
