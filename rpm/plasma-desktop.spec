@@ -138,6 +138,11 @@ rm -rf %{buildroot}
 
 # >> install post
 rm -vf %{buildroot}%{_kf5_libdir}/libkfontinst{,ui}.so || true
+
+# Hide knetattach from the applications menu
+cat >> %{buildroot}%{_kf5_sharedir}/applications/knetattach.desktop <<EOF
+NoDisplay=true
+EOF
 # << install post
 
 desktop-file-install --delete-original       \
