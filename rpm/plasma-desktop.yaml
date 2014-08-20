@@ -57,6 +57,7 @@ PkgConfigBR:
     - Qt5Script
     - Qt5Qml
     - Qt5Quick
+    - Qt5QuickWidgets
     - Qt5Svg
     - Qt5PrintSupport
     - libusb
