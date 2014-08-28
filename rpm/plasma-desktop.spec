@@ -6,6 +6,7 @@
 Name:       plasma-desktop
 
 # >> macros
+%bcond_with plasma-activities
 # << macros
 
 Summary:    Plasma 5 desktop
@@ -139,6 +140,12 @@ rm -rf %{buildroot}
 
 # >> install post
 rm -vf %{buildroot}%{_kf5_libdir}/libkfontinst{,ui}.so || true
+
+# Remove activities related stuff
+%if !%{with plasma-activities}
+rm -rf %{buildroot}%{_kf5_sharedir}/plasma/plasmoids/org.kde.plasma.showActivityManager
+rm -f %{buildroot}%{_kf5_servicesdir}/plasma-applet-org.kde.plasma.showActivityManager.desktop
+%endif
 
 # Hide knetattach from the applications menu
 cat >> %{buildroot}%{_kf5_sharedir}/applications/knetattach.desktop <<EOF
