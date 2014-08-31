@@ -66,6 +66,7 @@ PkgConfigBR:
     - xkbfile
     - xkbcommon
     - xrender
+    - xcursor
     # libxcb-devel:
     - xcb
     - xcb-composite
