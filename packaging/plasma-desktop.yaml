@@ -7,7 +7,6 @@ Summary      : Plasma 5 desktop
 Description  : |
   Plasma 5 desktop
 URL          : http://www.kde.org
-SetupOptions : -q -n %{name}-%{version}/upstream
 
 Sources:
     - "%{name}-%{version}.tar.xz"
