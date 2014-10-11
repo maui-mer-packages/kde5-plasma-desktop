@@ -10,7 +10,7 @@ Name:       plasma-desktop
 # << macros
 
 Summary:    Plasma 5 desktop
-Version:    5.0.0
+Version:    5.1.0
 Release:    1
 Group:      System/Base
 License:    GPLv2+
